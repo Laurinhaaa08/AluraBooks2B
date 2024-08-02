@@ -2,5 +2,5 @@
     --cor-de-fundo:#EBECEE;
 }
 body{
-    background-color:white;
+    background-color: var(--cor-de-fundo);
 }
