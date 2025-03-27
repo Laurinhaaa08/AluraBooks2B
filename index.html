@@ -1,152 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Books</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Apresentação Laurinha</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <header class="cabecalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="container-botao">
-            <label for="menu">
-                <span class="cabecalho-menu-hamburguer container-imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu-titulo">Categorias</li>
-                <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Programação</a>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="sobremim.html">Sobre mim</a>
                 </li>
-                <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Front-End</a>
+                <li>
+                    <a href="conquistas.html">Minhas conquistas</a>
                 </li>
-                <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Infraestrutura</a>
-                </li>
-                <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Business</a>
-                </li>
-                <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Design & UX</a>
+                <li>
+                    <a href="contato.html">Meu contato</a>
                 </li>
             </ul>
-            <img src="img/Logo.png" alt="Logo da AluraBooks">
-        </div>
-        <div class="container">
-            <a href="#"><img src="img/Favoritos.png" alt="Meus favoritos" class="container-imagem"></a>
-            <a href="#"><img src="img/Sacola.png" alt="Carrinho de compras" class="container-imagem"></a>
-            <a href="#"><img src="img/Perfil.png" alt="Meu perfil" class="container-imagem"></a>
-        </div>
-    </header>
-    <section class="banner">
-        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
-        <p class="banner-texto">Encontre o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
-    </section>
-    <section class="carrossel">
-        <h2 class="carrossel-titulo">Novos lançamentos</h2>
-        <div class="swiper">
-            <div class="swiper-pagination"></div>
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre apache Kafka da AluraBooks">
-                </div>
-                <div class="swiper-slide"><img src="img/Javascript.png" alt="Livro sobre o Java Script da AluraBooks">
-                </div>
-                <div class="swiper-slide"><img src="img/Angular.png" alt="Livro sobre a angular da AluraBooks"></div>
-                <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro sobre a arquitetura AluraBooks">
-                </div>
-                <div class="swiper-slide"><img src="img/Construct2.png" alt="Livro sobre a construção da AluraBooks">
-                </div>
-                <div class="swiper-slide"><img src="img/Gestão.png" alt="Livro sobre a gestão da AluraBooks"></div>
-                <div class="swiper-slide"><img src="img/Liderança.png" alt="Livro sobre a liderança da AluraBooks">
-                </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div class="card">
-            <div class="card-descricao">
-                <div class="descriacao">
-                    <h3 class=" descricao-titulo"> Talvez você se interesse por...</h3>
-                    <h2 class="descriacao-titulo-livro">Angular e Firebase</h2>
-                    <p class="descricao-texto"> Construção de aplicação integrada ao Google</p>
-                </div>
-                <img scr="./img/A" class="descricao-imagem">
-            </div>
-            <div class="card-botoes">
-                <ul class="botoes">
-                    <li class="botoes-item"><img src="./img/Favoritos.png" alt="Favoritar Livro">
-                    </li>
-                    <li class="botoes-item">
-                        <img src="./img/Sacola.png" alt="Adicionar a Sacola">
-                    </li>
-                </ul>
-                <a href="#" class="botoes-ancora">Saiba mais</a>
-            </div>
-        </div>
-    </section>
-    <section class="topicos">
-        <h2 class="topicos-titulo"> TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <ul class="topicos-lista">
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">Android</a>
-            </li>
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">Marketing Digital</a>
-            </li>
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">Agile</a>
-            </li>
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">Startups</a>
-            </li>
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">HTML & CSS</a>
-            </li>
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">Python</a>
-            </li>
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">OO</a>
-            </li>
-            <li class="topicos-item">
-                <a href="#" class="topicos-link">Java</a>
-            </li>
-        </ul>
-    </section>
-    <section class="contato">
-        <h2 class="contato-titulo">Fique de olho nas novidades!</h2>
-        <p class="contato-texto">Atualizações e e-books, novos livros, promoções e outros.</p>
-        <input type="email" placeholder="Cadatre seu email" class="contato-email">
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets",
-            },
-        });
-    </script>
-</body>
-<hr />
-<footer class="rodape">
-    <h2 class="rodape-titulo">Grupo Alura</h2>
-</footer>
+        </nav>
+        <header>
+            <div class="center">
+                <img src="./img/pesquisa portifolio.jpg"></img>
+            </div>     
+    
+            <h1>Laura G.S.<h1> 
+            <h2>Estudante e Atleta</h2>
+    
+        </header>
+            <main>
+                <section>
+                    <h3>Sobre mim</h3>
+                    <p>
+                        Meu nome é Laura, tenho 16 anos e nasci em Campo Mourão no Paraná. Desde criança, faço muitas coisas,
+                        desde atividades físicas como esportes e atividades que envolvem criatividade como desenhos e crochê. Sou apaixonada
+                        por livros de fantasia e meu sonho é ter uma biblioteca em casa, para aproveitar as leituras com conforto. 
+                        Meus pais dizem que posso ser muito teimosa quando quero, mas eu apenas defendo os meus ideais e 
+                        aquilo que eu acredito, o que vejo como uma excelente qualidade. Gosto de estar com os meus amigos, com os 
+                        meus animais de extimação, de ir para a igreja e de me dedicar aos estudos, pois sei que no fututo, o estudo
+                        será uma chave valiosa para mim.
+                       
+                    </p>
+                </section>
+    
+                <section>
+                    <h3>Formação acadêmica</h3>
+                    <p>
+                        Atualmente estou no terceiro ano do ensino médio e pretendo cursar direito ou pcsicologia em Máringa ou 
+                        aqui mesmo em Campo Mourão. A profissão que quero seguir é a Polícia Rodoviária Federal (PRF), 
+                        simplesmente por ser apaixonada na profissão e admirar muito a mesma. Assim que eu terminar a faculdade 
+                        com um ensino superior, pretendo fazer um concurso público para ingressar na profissão e se Deus quiser, 
+                        permanecer nela. Além de um ótimo salário, a profissão exige um controle mental muito grande e uma excelente 
+                        capacidade física, por isso a admiro tanto.
+                        
+                    </p>
+                </section>
+    
+                <section>
+                    <h3>Desenvolvimento no esporte</h3>
+                    <p>
+                        Amo fazer todos os esportes possíveis, porém o que eu mais amo é o taekwoondo, uma arte marcial coreana 
+                        criada para defesa pessoal. Pratico a quase um ano e já trouxe muitas medalhas para casa quando eu vou em competições 
+                        em outras cidades. É um esporte maravilhoso que jamais me arrependo de ter começado, pois só trouxe benefícios a 
+                        minha vida. Como eu disse, eu pretendo fazer faculdade, mas se eu tiver a oportunidade de viver do esporte, eu
+                        com certeza vou amar participar dessa ideia.
+                        
+                    </p>
+                </section>
+            </main>
+            <footer>
+                <a href="https://instagram.com/lah.tkd." target="_blank" rel="noopener noreferrer">
+                    <img src="./img/insta.png"></img>
+                    <p>instagram</p>
+                </a>
+                <a href="https://tiktok.com/lah.tkd." target="_blank" rel="noopener noreferrer">
+                    <img src="./img/tiktok.png"></img>
+                    <p>tiktok</p>
+                </a>
+                <a href="https://whatsapp.com/lah.tkd." target="_blank" rel="noopener noreferrer">
+                    <img src="./img/whatsapp.jpeg"></img>
+                    <p>instagram</p>
+                </a>
+            </footer>
+    </div>
 
+</body>
 </html>
